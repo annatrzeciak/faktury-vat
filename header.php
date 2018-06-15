@@ -13,4 +13,4 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
-<body <?php echo ($_SERVER[ 'REQUEST_URI']=='/' )? 'class="d-flex flex-column justfity-content-beetwen img-background"': 'class="d-flex flex-column justfity-content-beetwen"' ?> >
+<body >

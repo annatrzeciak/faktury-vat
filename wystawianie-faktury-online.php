@@ -2,11 +2,10 @@
     include 'header.php';
     include 'menu.php';
 ?>
-    <article>
+     <article class="page-article">
+
         <div class="container">
             <h1>Wystawianie faktury online</h1>
         </div>
     </article>
-<?php
-    include 'footer.php';
-?>
+

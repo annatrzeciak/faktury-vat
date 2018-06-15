@@ -1,0 +1,186 @@
+@font-face {
+    font-family: 'TitilliumWeb-Bold';
+    src: url('/fonts/TitilliumWeb-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'TitilliumWeb';
+    src: url('/fonts/TitilliumWeb-Regular.ttf');
+}
+
+$font-bold: 'TitilliumWeb-Bold';
+$font-regular: 'TitilliumWeb';
+
+
+body {
+    font-family: $font-regular;
+}
+
+.text-bold {
+    font-family: $font-bold;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    width: 300px;
+    flex-direction: column;
+    float: left;
+    height: 100%;
+    font-family: $font-bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    min-height: 100vh;
+    .navbar-brand {
+        color: #fff;
+        width: 100%;
+        margin-right: 0;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .navbar-nav {
+        flex-direction: column;
+
+        .nav-link {
+            width: 100%;
+            color: #fff;
+           
+            &.active {
+                background: #007bff;
+            }
+            &:hover{
+                text-decoration: underline;
+                color: #fff;
+            }
+        }
+    }
+    footer {
+        p {
+            font-family: $font-regular;
+            text-transform: none;
+            font-size: 16px;
+        }
+
+    }
+}
+
+.header-container {
+    position: relative;
+    min-height: 300px;
+
+    .navbar {
+        position: absolute;
+        min-height: 100%;
+
+        background: rgba(0, 0, 0, 0.5);
+
+
+    }
+    .carousel {
+        min-height: 300px;
+        .carousel-item {
+            min-height: 300px;
+            img {
+                min-height: 300px;
+                object-position: center;
+                object-fit: cover;
+                display: block;
+            }
+            .carousel-caption {
+                min-height: 300px;
+
+                padding: 40px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: rgba(0, 0, 0, 0.5);
+                height: 100%;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                h3 {
+                    width: 50%;
+                    text-align: right;
+                    font-size: 40px;
+                    font-family: $font-bold;
+                    text-align: center;
+                }
+                div {
+                    width:100%;
+                    .btn {
+                        font-size: 20px;
+                        
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+.page-article {
+    margin-left: 350px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.more-info {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .function-item {
+        margin-bottom: 30px;
+        transition: 0.5s;
+        z-index: 1;
+        padding: 20px;
+        img {
+            min-height: 100%;
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            object-position: top left;
+
+        }
+        &:hover {
+            transform: scale(1.2);
+            z-index: 2;
+            background: #f1f1f1;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navbar {
+        width: 100%;
+        height: auto;
+        min-height: auto !important;
+        display: inline-block;
+        text-align: left;
+        .navbar-brand {
+
+            width: auto;
+        }
+    }
+    .carousel {
+        .carousel-item {
+            .carousel-caption {
+                h3 {
+                    width: 100% !important;
+                    font-size: 26px !important;
+
+                }
+                div {
+                    a {
+                        font-size: 18px !important;
+                    }
+                }
+            }
+        }
+    }
+}

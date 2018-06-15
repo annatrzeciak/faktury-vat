@@ -1,3 +1,127 @@
+@font-face {
+  font-family: 'TitilliumWeb-Bold';
+  src: url("/fonts/TitilliumWeb-Bold.ttf"); }
+@font-face {
+  font-family: 'TitilliumWeb';
+  src: url("/fonts/TitilliumWeb-Regular.ttf"); }
+body {
+  font-family: "TitilliumWeb"; }
 
+.text-bold {
+  font-family: "TitilliumWeb-Bold"; }
+
+.navbar {
+  position: fixed;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  width: 300px;
+  flex-direction: column;
+  float: left;
+  height: 100%;
+  font-family: "TitilliumWeb-Bold";
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  min-height: 100vh; }
+  .navbar .navbar-brand {
+    color: #fff;
+    width: 100%;
+    margin-right: 0; }
+    .navbar .navbar-brand:hover {
+      text-decoration: underline; }
+  .navbar .navbar-nav {
+    flex-direction: column; }
+    .navbar .navbar-nav .nav-link {
+      width: 100%;
+      color: #fff; }
+      .navbar .navbar-nav .nav-link.active {
+        background: #007bff; }
+      .navbar .navbar-nav .nav-link:hover {
+        text-decoration: underline;
+        color: #fff; }
+  .navbar footer p {
+    font-family: "TitilliumWeb";
+    text-transform: none;
+    font-size: 16px; }
+
+.header-container {
+  position: relative;
+  min-height: 300px; }
+  .header-container .navbar {
+    position: absolute;
+    min-height: 100%;
+    background: rgba(0, 0, 0, 0.5); }
+  .header-container .carousel {
+    min-height: 300px; }
+    .header-container .carousel .carousel-item {
+      min-height: 300px; }
+      .header-container .carousel .carousel-item img {
+        min-height: 300px;
+        object-position: center;
+        object-fit: cover;
+        display: block; }
+      .header-container .carousel .carousel-item .carousel-caption {
+        min-height: 300px;
+        padding: 40px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; }
+        .header-container .carousel .carousel-item .carousel-caption h3 {
+          width: 50%;
+          text-align: right;
+          font-size: 40px;
+          font-family: "TitilliumWeb-Bold";
+          text-align: center; }
+        .header-container .carousel .carousel-item .carousel-caption div {
+          width: 100%; }
+          .header-container .carousel .carousel-item .carousel-caption div .btn {
+            font-size: 20px; }
+
+.page-article {
+  margin-left: 350px;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+.more-info {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  .more-info .function-item {
+    margin-bottom: 30px;
+    transition: 0.5s;
+    z-index: 1;
+    padding: 20px; }
+    .more-info .function-item img {
+      min-height: 100%;
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      object-position: top left; }
+    .more-info .function-item:hover {
+      transform: scale(1.2);
+      z-index: 2;
+      background: #f1f1f1; }
+
+@media screen and (max-width: 767px) {
+  .navbar {
+    width: 100%;
+    height: auto;
+    min-height: auto !important;
+    display: inline-block;
+    text-align: left; }
+    .navbar .navbar-brand {
+      width: auto; }
+
+  .carousel .carousel-item .carousel-caption h3 {
+    width: 100% !important;
+    font-size: 26px !important; }
+  .carousel .carousel-item .carousel-caption div a {
+    font-size: 18px !important; } }
 
 /*# sourceMappingURL=style.css.map */
